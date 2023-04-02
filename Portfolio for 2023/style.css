@@ -1,0 +1,143 @@
+@import url('//db.onlinewebfonts.com/c/548e77e130ea884c764acabe1ba1ad63?family=0Arame');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+:root{
+    --First-Color: #fffdfd;
+    --Second-Color: #b9cfd9;
+    --Third-Color: #06141c;
+    --fourth-Color: #da792e;
+}
+
+body{
+    background-color: var(--Third-Color);
+    color: #ffffff;
+    font-family: '0Arame', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+a{
+    text-decoration: none;
+    color: var(--Second-Color);
+}
+section{
+    min-height: 100vh;
+    margin: 5% 0% 5% 0%;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#Home{
+    margin: 5%;
+    display: flex;
+    padding-top: 13%;
+    justify-content: center;
+    font-size: 1rem;
+}
+#Home h1{
+    font-size: 2.5rem;
+}
+#Home img{
+    padding-left: 20%;
+    width: 250px;
+    height: 250px;
+}
+.container{
+    margin-top: 2%;
+}
+.container a{
+    padding: 1%;
+    border: 3px solid var(--Second-Color);
+}
+
+
+
+.container button:hover{
+    cursor: pointer;
+}
+
+section h1{
+    font-size: 2.5rem;
+}
+.hidden img{
+    width: 250px;
+    height: 250px;
+}
+
+.hidden{
+    width: 60%;
+    border-radius: 1rem;
+
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    
+}
+
+@media(prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
+
+#GameOne, #FitAndFirmOrigin, #Left4Dead2WorkShop{
+    background-color: var(--fourth-Color);
+    color: var(--Third-Color);
+}
+
+#GameTwo, #FitAndFirmRemake, #AI_Trainer{
+    background-color: var(--Second-Color);
+    color: #06141c;
+}
+#Application, #VSCODE_Extension{
+    background-color: var(--First-Color);
+    color: #06141c;
+}
+
+
+
+.MainTitle{
+    padding: 5%;
+}
+
+.Content{
+    
+    display: flex;
+    align-items: center;    
+}
+
+.Content img{
+    padding: 5%;
+    width: 250px;
+    height: 250px;
+}
+.ContentText{
+    padding: 5%;
+}
+.ContentText h1{
+    font-size: 1.5rem;
+    
+}
+.ContentText p{
+    color: var(--Third-Color);
+}
+.ContentText a{
+    color: var(--Third-Color);
+}
+
